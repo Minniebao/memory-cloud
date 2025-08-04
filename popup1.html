@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xu Yan’s Memory – Window Night</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #f4f4fa;
+      padding: 30px;
+      margin: 0;
+    }
+    .popup-container {
+      max-width: 700px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #5f4b8b;
+    }
+    p {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    video {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .audio-button {
+      background-color: #c9b6e4;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      font-size: 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .audio-button:hover {
+      background-color: #b39ddb;
+    }
+  </style>
+</head>
+<body>
+  <div class="popup-container">
+    <h2>Memory Trigger</h2>
+    <p>This memory was captured during Xu Yan’s lowest moment—sitting alone at the window, staring into the city lights, lost in thought.</p>
+
+    <video controls>
+      <source src="video/video1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <button class="audio-button" onclick="document.getElementById('bg-audio').play()">Play Background Music</button>
+    <audio id="bg-audio" loop>
+      <source src="emotional-piano-music-322389.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</body>
+</html>
